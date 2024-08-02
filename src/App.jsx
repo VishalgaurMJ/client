@@ -148,10 +148,7 @@ const ManageInstitute = lazy(() =>
 );
 const AddNews = lazy(() => import("./pages/News/AddNews"));
 const ManageNews = lazy(() => import("./pages/News/ManageNews"));
-const AddUniversity = lazy(() => import("./pages/University/AddUniversity"));
-const ManageUniversity = lazy(() =>
-  import("./pages/University/Manageuniversity")
-);
+
 const ManageFAQ = lazy(() => import("./pages/FAQ&QA/ManageFAQ"));
 const AddProductArticle = lazy(() =>
   import("./pages/Product Article/AddArticle")
@@ -286,8 +283,6 @@ function App() {
             path="manageproductarticle"
             element={<ManageProductArticle />}
           />
-          {/* <Route path="adduniversity" element={<AddUniversity />} />
-          <Route path="manageuniversity" element={<ManageUniversity />} /> */}
 
           <Route path="*" element={<Navigate to="/404" />} />
         </Route>
