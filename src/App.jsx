@@ -70,8 +70,6 @@ const Recharts = lazy(() => import("./pages/chart/recharts"));
 const MapPage = lazy(() => import("./pages/map"));
 
 // table pages
-const BasicTablePage = lazy(() => import("./pages/table/table-basic"));
-const TanstackTable = lazy(() => import("./pages/table/react-table"));
 
 // utility pages
 const InvoicePage = lazy(() => import("./pages/utility/invoice"));
@@ -101,7 +99,6 @@ const StatisticWidget = lazy(() => import("./pages/widget/statistic-widget"));
 
 // app page
 const TodoPage = lazy(() => import("./pages/app/todo"));
-const EmailPage = lazy(() => import("./pages/app/email"));
 const ChatPage = lazy(() => import("./pages/app/chat"));
 const ProjectPostPage = lazy(() => import("./pages/app/projects"));
 const ProjectDetailsPage = lazy(() =>
@@ -145,8 +142,6 @@ const AddInstitute = lazy(() => import("./pages/institutes/AddInstitutes"));
 const ManageInstitute = lazy(() =>
   import("./pages/institutes/ManageInstitutes")
 );
-const AddNews = lazy(() => import("./pages/News/AddNews"));
-const ManageNews = lazy(() => import("./pages/News/ManageNews"));
 
 const ManageFAQ = lazy(() => import("./pages/FAQ&QA/ManageFAQ"));
 const AddProductArticle = lazy(() =>
@@ -182,7 +177,6 @@ function App() {
           <Route path="banking" element={<BankingPage />} />
           {/* App pages */}
           <Route path="todo" element={<TodoPage />} />
-          <Route path="email" element={<EmailPage />} />
           <Route path="chat" element={<ChatPage />} />
           <Route path="projects" element={<ProjectPostPage />} />
           <Route path={"projects/:id"} element={<ProjectDetailsPage />} />
@@ -224,8 +218,6 @@ function App() {
           <Route path="chartjs" element={<ChartJs />} />
           <Route path="recharts" element={<Recharts />} />
           <Route path="map" element={<MapPage />} />
-          <Route path="table-basic" element={<BasicTablePage />} />
-          <Route path="react-table" element={<TanstackTable />} />
           <Route path="invoice" element={<InvoicePage />} />
           <Route path="invoice-add" element={<InvoiceAddPage />} />
           <Route path="invoice-preview" element={<InvoicePreviewPage />} />
@@ -273,9 +265,7 @@ function App() {
           {/* <Route path="manageQA" element={<ManageQA/>} /> */}
           <Route path="addinstitute" element={<AddInstitute />} />
           <Route path="manageinstitute" element={<ManageInstitute />} />
-          <Route path="addnews" element={<AddNews />} />
           <Route path="notification" element={<AddNotificationModal />} />
-          <Route path="managenews" element={<ManageNews />} />
           <Route path="addproductarticle" element={<AddProductArticle />} />
           <Route
             path="manageproductarticle"
