@@ -286,8 +286,8 @@ function App() {
             path="manageproductarticle"
             element={<ManageProductArticle />}
           />
-          <Route path="adduniversity" element={<AddUniversity />} />
-          <Route path="manageuniversity" element={<ManageUniversity />} />
+          {/* <Route path="adduniversity" element={<AddUniversity />} />
+          <Route path="manageuniversity" element={<ManageUniversity />} /> */}
 
           <Route path="*" element={<Navigate to="/404" />} />
         </Route>
