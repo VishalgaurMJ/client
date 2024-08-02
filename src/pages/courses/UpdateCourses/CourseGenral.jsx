@@ -51,7 +51,7 @@ function CourseGeneral({ onSubmiter }) {
         return;
       }
       const response = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/coursegeneral/${formattedTitle}`,
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/coursegeneral/${formattedTitle}`,
         formData
       );
       onSubmiter();
@@ -78,7 +78,7 @@ function CourseGeneral({ onSubmiter }) {
       try {
         console.log("Name", title);
         const response = await fetch(
-          `https://server-dashboard-zeta.vercel.app/api/getcompletecourseinfo/${formattedTitle}`
+          `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getcompletecourseinfo/${formattedTitle}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -109,7 +109,7 @@ function CourseGeneral({ onSubmiter }) {
     const fetchcourseName = async () => {
       try {
         const response = await axios.get(
-          "https://server-dashboard-zeta.vercel.app/api/getallcoursenames"
+          "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getallcoursenames"
         );
         setcourseName(response.data.title);
       } catch (error) {
@@ -134,7 +134,7 @@ function CourseGeneral({ onSubmiter }) {
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          "https://server-dashboard-zeta.vercel.app/api/getallcourses"
+          "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getallcourses"
         );
         setMapCourses(response.data.courses || []);
       } catch (error) {

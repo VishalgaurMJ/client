@@ -78,7 +78,7 @@ function Form2({ onSubmit }) {
       // });
 
       const result = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/overviewdetails/${name}`,
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/overviewdetails/${name}`,
         formData
       );
 
@@ -96,7 +96,7 @@ function Form2({ onSubmit }) {
     const fetchExamDetails = async () => {
       try {
         const response = await fetch(
-          `https://server-dashboard-zeta.vercel.app/api/getcompletedinfo/${name}`
+          `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getcompletedinfo/${name}`
         );
         if (response.ok) {
           const data = await response.json();

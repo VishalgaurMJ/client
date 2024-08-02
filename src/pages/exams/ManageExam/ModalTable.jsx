@@ -23,7 +23,7 @@ const handleDelete = async (value) => {
 
   try {
     const response = await axios.delete(
-      `https://server-dashboard-zeta.vercel.app/api/deletechilds/${_id}`
+      `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/deletechilds/${_id}`
     );
     toastii();
     if (response.status === 200) {
@@ -170,7 +170,7 @@ const ModalTable = ({ filterChild }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://server-dashboard-zeta.vercel.app/api/allchildpagedetails"
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/allchildpagedetails"
       );
       if (response.status === 200) {
         const childDetails = response.data;

@@ -113,7 +113,7 @@ function slug({ slugs, fetchChildDetails }) {
       formData.append("updated_on", currentDate);
 
       const response = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/overviewsubpage/${slugr}`, // Use `sl` from useParams for URL
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/overviewsubpage/${slugr}`, // Use `sl` from useParams for URL
         formData
       );
 

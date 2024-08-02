@@ -122,11 +122,11 @@ const Examlisting = ({
       const data1 = Object.fromEntries(formData1);
 
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/details",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/details",
         formData
       );
       const responses = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/adddetails/${_id}`,
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/adddetails/${_id}`,
         data1
       );
 
@@ -158,7 +158,7 @@ const Examlisting = ({
   const fetchDetailsByName = async (selectedName) => {
     try {
       const response = await axios.get(
-        `https://server-dashboard-zeta.vercel.app/api/getnamedetails/${selectedName}`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getnamedetails/${selectedName}`
       );
       if (response.data && response.data.length > 0) {
         setExamDetails(response.data[0]);
@@ -196,7 +196,7 @@ const Examlisting = ({
     const fetchCourses = async () => {
       try {
         const response = await axios.get(
-          "https://server-dashboard-zeta.vercel.app/api/getallcourses"
+          "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getallcourses"
         );
         setMapCourses(response.data.courses || []);
       } catch (error) {

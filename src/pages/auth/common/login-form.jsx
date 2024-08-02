@@ -33,7 +33,7 @@ const LoginForm = () => {
     try {
       console.log("me", credentials);
       const response = await fetch(
-        "https://server-dashboard-zeta.vercel.app/api/login",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/login",
         {
           method: "POST",
           headers: {

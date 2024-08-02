@@ -53,7 +53,7 @@ function AddExam() {
   const fetchTITLE = async () => {
     try {
       const response = await axios.get(
-        "https://server-dashboard-zeta.vercel.app/api/getallcoursenames"
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getallcoursenames"
       );
       setTITLE(response.data.TITLE);
     } catch (error) {

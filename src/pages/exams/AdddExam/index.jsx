@@ -53,7 +53,7 @@ function AddExam() {
   const fetchShortNames = async () => {
     try {
       const response = await axios.get(
-        "https://server-dashboard-zeta.vercel.app/api/getallnames"
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getallnames"
       );
       setShortNames(response.data.shortNames);
     } catch (error) {

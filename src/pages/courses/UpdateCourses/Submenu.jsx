@@ -42,7 +42,7 @@ function Submenu({ onClose, name, fetchChildDetails, id, unique_id }) {
       };
 
       const result = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/courseoverviewsubpage",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/courseoverviewsubpage",
         requestData
       );
 

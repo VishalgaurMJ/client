@@ -115,7 +115,7 @@ function CourseChild({ slugs, fetchChildDetails }) {
       formData.append("updated_on", currentDate);
 
       const response = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/courseoverviewsubpage/${slugr}`, // Use `sl` from useParams for URL
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/courseoverviewsubpage/${slugr}`, // Use `sl` from useParams for URL
         formData
       );
 

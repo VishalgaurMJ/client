@@ -78,11 +78,11 @@ const CourseGeneral = ({
       const data1 = Object.fromEntries(formData1);
 
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/coursegeneral",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/coursegeneral",
         formData
       );
       const responses = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/addcoursedetails/${_id}`,
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/addcoursedetails/${_id}`,
         data1
       );
       settitless(title);
@@ -114,7 +114,7 @@ const CourseGeneral = ({
   const fetchDetailsByName = async (selectedName) => {
     try {
       const response = await axios.get(
-        `https://server-dashboard-zeta.vercel.app/api/getcoursedetailsbytitle/${selectedName}`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getcoursedetailsbytitle/${selectedName}`
       );
       if (response.data && response.data.length > 0) {
         setCourseDetails(response.data[0]);

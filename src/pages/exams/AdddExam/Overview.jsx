@@ -93,7 +93,7 @@ function Overview({ examName, onAddSubPage, onSubmitt, id, unique_id }) {
       const data = Object.fromEntries(formData);
 
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/overviewdetails",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/overviewdetails",
         data
       );
 
@@ -152,7 +152,7 @@ function Overview({ examName, onAddSubPage, onSubmitt, id, unique_id }) {
       const data = Object.fromEntries(formData);
 
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/overviewdetails",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/overviewdetails",
         data
       );
 

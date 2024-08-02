@@ -68,7 +68,7 @@ function AddCoursesar() {
     const fetchExamDetails = async () => {
       try {
         const response = await fetch(
-          `https://server-dashboard-zeta.vercel.app/api/getcompletecourseinfo/${formattedTitle}`
+          `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getcompletecourseinfo/${formattedTitle}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -94,7 +94,7 @@ function AddCoursesar() {
   const fetchChildDetails = async () => {
     try {
       const response = await fetch(
-        `https://server-dashboard-zeta.vercel.app/api/allcoursechildpagedetails`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/allcoursechildpagedetails`
       );
       if (response.ok) {
         const data = await response.json();

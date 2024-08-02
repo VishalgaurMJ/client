@@ -70,7 +70,7 @@ function Addexam({ fetchShortNames }) {
       console.log("Request Data:", requestData);
 
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/adddetails",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/adddetails",
         requestData
       );
       await fetchShortNames();

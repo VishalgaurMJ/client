@@ -61,7 +61,7 @@ function AddCourse({ fetchcourseNames }) {
 
       console.log("Request Data:", requestData);
       const response = await axios.post(
-        "https://server-dashboard-zeta.vercel.app/api/addcoursedetails",
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/addcoursedetails",
         requestData
       );
       await fetchcourseNames();

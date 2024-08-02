@@ -32,7 +32,7 @@ const RecruitmentExam = () => {
   const handleStatusChange = async (row) => {
     try {
       const response = await axios.put(
-        `https://server-dashboard-zeta.vercel.app/api/updatestatus/${row.original.shortname}`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/updatestatus/${row.original.shortname}`
       );
       if (response.data.success) {
         const updatedData = manageData.map((data) => {
@@ -54,7 +54,7 @@ const RecruitmentExam = () => {
   const handleDetailsClick = async (value) => {
     try {
       const response = await axios.get(
-        `https://server-dashboard-zeta.vercel.app/api/getcompletedinfo/${value.shortname}`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getcompletedinfo/${value.shortname}`
       );
       console.log("Response", response);
 
@@ -241,7 +241,7 @@ const RecruitmentExam = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://server-dashboard-zeta.vercel.app/api/getdetails"
+        "https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/getdetails"
       );
       if (response.status === 200) {
         const { examDetails, overviewDetails } = response.data[0];
@@ -287,7 +287,7 @@ const RecruitmentExam = () => {
     try {
       // Use itemToDelete.name to construct the URL
       const response = await axios.delete(
-        `https://server-dashboard-zeta.vercel.app/api/deletedetails/${value.action}`
+        `https://server-medicaljagat-git-main-medical-jagat.vercel.app/api/deletedetails/${value.action}`
       );
       toastii();
       if (response.status === 200) {
