@@ -13,5 +13,6 @@ export default defineConfig({
     rollupOptions: {
       external: ["styled-components"],
     },
+    outDir: "dist", // Ensure this is set to 'dist'
   },
 });
