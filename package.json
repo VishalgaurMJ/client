@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "concurrently \"npm run dev\" \"nodemon backend_node index.js\"",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -39,7 +40,6 @@
     "leaflet": "^1.9.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
-    "path": "^0.12.7",
     "react": "^18.3.1",
     "react-apexcharts": "^1.4.0",
     "react-beautiful-dnd": "^13.1.1",
